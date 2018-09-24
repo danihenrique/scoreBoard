@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "8b1c9bb3-235a-44b6-94e4-73670a8250d5",
+		"name": "scoreBoard",
+		"description": "Backend Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Score->Save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"scores\": \"1\\n1 2 10 I\\n3 1 11 C\\n1 2 19 R\\n1 2 21 C\\n1 1 25 C\\n\\n2\\n1 2 10 I\\n3 1 11 C\\n1 2 19 R\\n1 2 21 C\\n1 1 25 C\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/v1/score",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"score"
+					]
+				},
+				"description": "Save a new score"
+			},
+			"response": []
+		},
+		{
+			"name": "Score->Get All",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/v1/score",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"score"
+					]
+				},
+				"description": "Get all scores"
+			},
+			"response": []
+		},
+		{
+			"name": "Score->Gist Score",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/v1/score/hoDga0D4nn/gist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"score",
+						"hoDga0D4nn",
+						"gist"
+					]
+				},
+				"description": "Save a gist score"
+			},
+			"response": []
+		},
+		{
+			"name": "Gist->List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/v1/gist",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"gist"
+					]
+				},
+				"description": "List all gists"
+			},
+			"response": []
+		},
+		{
+			"name": "Gist->Comments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/v1/gist/2fe0df6f83d688236d6c47e292f5c42f/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"gist",
+						"2fe0df6f83d688236d6c47e292f5c42f",
+						"comments"
+					]
+				},
+				"description": "Get gist comments"
+			},
+			"response": []
+		}
+	]
+}
