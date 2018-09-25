@@ -12,9 +12,11 @@ The aim is to provide a clear, concise and organised code.
 - Method to list all comments from a Gist.
 
 ## NOTES
+- Check ScoreBoard.pdf for input samples and details;
 - The response/request ContentType its a json.
 - Gist ID its part of endpoint URL.
 - Change Gist user and password in the configuration files.
+
 
 ## Running
 - `npm start` and start coding
